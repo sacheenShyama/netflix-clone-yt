@@ -20,7 +20,7 @@ function Model() {
 
   const [trailer, setTrailer] = useState('')
   const [genres, setGenres] = useState<Genre[]>([])
-  const [muted, setMuted] = useState(true)
+  const [muted, setMuted] = useState(false)
 
   useEffect(() => {
     if (!movie) return
@@ -53,7 +53,7 @@ function Model() {
   const handleClose = () => {
     setShowModal(false)
   }
-  console.log(trailer)
+  // console.log(trailer)
   return (
     <MuiModal
       open={showModal}
@@ -75,6 +75,7 @@ function Model() {
             height="100%"
             style={{ position: 'absolute', top: '0', left: '0' }}
             playing
+            controls
             muted={muted}
           />
           <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
