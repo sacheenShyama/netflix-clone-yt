@@ -20,7 +20,7 @@ function Model() {
 
   const [trailer, setTrailer] = useState('')
   const [genres, setGenres] = useState<Genre[]>([])
-  const [muted, setMuted] = useState(false)
+  // const [muted, setMuted] = useState(false)
 
   useEffect(() => {
     if (!movie) return
@@ -76,7 +76,7 @@ function Model() {
             style={{ position: 'absolute', top: '0', left: '0' }}
             playing
             controls
-            muted={muted}
+            // muted={muted}
           />
           <div className="absolute bottom-10 flex w-full items-center justify-between px-10">
             <div className="flex space-x-2">
