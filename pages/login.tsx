@@ -95,6 +95,7 @@ function login() {
         <div className="text-[gray]">
           New to Netflix?{' '}
           <button
+            type="submit"
             className="text-white hover:underline"
             onClick={() => setLogin(false)}
           >
