@@ -93,10 +93,10 @@ function login() {
         </button>
 
         <div className="text-[gray]">
-          New to Netflix?{' '}
+          New to Netflix? pls fill up all the above details then click on
           <button
             type="submit"
-            className="text-white hover:underline"
+            className="text-bold text-white hover:underline"
             onClick={() => setLogin(false)}
           >
             Sign Up
